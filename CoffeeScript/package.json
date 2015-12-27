@@ -1,0 +1,16 @@
+{
+  "name": "buzzfizz-coffeescript",
+  "version": "1.0.0",
+  "description": "Fizz Buzz Node.JS with CoffeeScript example app.",
+  "main": "desc/index.js",
+  "scripts": {
+    "start": "node desc/index.js",
+    "prestart": "npm run coffee",
+    "coffee": "coffee -c -o ./desc ./app"
+  },
+  "author": "https://github.com/adamfaryna",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.10.0"
+  }
+}
