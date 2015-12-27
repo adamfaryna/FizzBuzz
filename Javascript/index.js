@@ -1,8 +1,6 @@
 'use strict';
 
-var length = 35;
-
-for (var i = 1; i !== length; i++) {
+for (var i = 1; i !== 35; i++) {
   if (i % 3 === 0) {
     console.log(i % 5 === 0 ? 'fizz buzz' : 'fizz');
 

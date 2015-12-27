@@ -8,11 +8,8 @@ import java.util.stream.IntStream;
  * @author https://github.com/adamfaryna
  */
 public class App {
-
-  public static final int ARRAY_LENGTH = 34;
-
   public static void main(String[] args) {
-    IntStream.rangeClosed(1, ARRAY_LENGTH).forEach(
+    IntStream.rangeClosed(1, 34).forEach(
       (v) -> {
         if (v % 3 == 0) {
           System.out.println(v % 5 == 0 ? "fizz buzz" : "fizz");
