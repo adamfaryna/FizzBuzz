@@ -1,4 +1,5 @@
 **/target
 *.iml
 **/bower_components
-**/node_components
+**/node_modules
+**/.idea

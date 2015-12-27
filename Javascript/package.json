@@ -1,0 +1,16 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "Fizz Buzz Node.JS example app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "npm run lint",
+    "lint": "jshint **.js"
+  },
+  "author": "https://github.com/adamfaryna",
+  "license": "ISC",
+  "devDependencies": {
+    "jshint": "^2.8.0"
+  }
+}
