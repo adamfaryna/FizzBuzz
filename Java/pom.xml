@@ -6,17 +6,50 @@
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>buzzfizz</name>
-  <url>http://maven.apache.org</url>
+  <url>https://github.com/adamfaryna/FizzBuzz</url>
+
+  <developers>
+    <developer>
+      <id>adamfaryna</id>
+      <name>Adam Faryna</name>
+      <url>https://github.com/adamfaryna</url>
+      <organization>ACME</organization>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <scm>
+    <developerConnection>scm:git:https://github.com/adamfaryna/FizzBuzz</developerConnection>
+    <tag>HEAD</tag>
+    <url>https://github.com/adamfaryna/FizzBuzz</url>
+  </scm>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+      <comments>A business-friendly OSS license</comments>
+    </license>
+  </licenses>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <jdk.version>1.8</jdk.version>
-    <junit.version>4.12</junit.version>
-    <mockito.version>1.10.19</mockito.version>
   </properties>
 
-
   <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.3</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -27,32 +60,4 @@
       </plugin>
     </plugins>
   </build>
-
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>${junit.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-all</artifactId>
-        <version>${mockito.version}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-all</artifactId>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
 </project>
